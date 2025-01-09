@@ -8,11 +8,14 @@ const User = require('../models/user');
  * Creates a new user.
  * 
  * @param {Object} userData - User data to be created.
- * @returns {Promise} Created user.
+ * @returns {Promise} Created user's id.
  */
+
 exports.addUser = async (userData) => {
-    return await User.create(userData);
+    const user = await User.create(userData);
+    return user.id; // Return only the ID of the created user
 };
+
 
 /**
  * Retrieves all users based on the provided role.
