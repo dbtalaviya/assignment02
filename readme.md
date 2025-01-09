@@ -28,7 +28,7 @@ Create a `.env` file in the root directory:
 ```env
 DB_HOST=db
 DB_USER=root
-DB_PASSWORD=root
+DB_PASSWORD=<your-password>
 DB_NAME=user_management
 DB_PORT=3306
 PORT=3000
